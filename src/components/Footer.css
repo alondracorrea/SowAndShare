@@ -1,0 +1,105 @@
+/* Footer.css */
+
+/* Add sticky positioning to keep the footer at the bottom */
+/*.footer-wrapper {
+  position: sticky;
+  bottom: 0;
+} */
+
+.main-footer {
+    display: flex;
+    justify-content: center; /* Horizontally center the columns */
+    font-family: 'Outfit','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .container {
+    display: flex;
+    justify-content: center; /* horizontally center the columns within the container */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* orizontally center the columns within the row */
+    
+  }
+  
+  .footer-column {
+    flex: 0.2; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    box-sizing: border-box; 
+    border-right: 1px solid black; 
+    
+    
+  }
+  .footer-column1 {
+    flex: 0.5; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    box-sizing: border-box; /* include padding in the column's width */
+    border-right: 1px solid black; /* Add column lines */
+
+  }
+
+  .footer-column2 {
+    flex: 0.5; /* grow and shrink  */
+    padding: 20px; 
+    box-sizing: border-box;
+
+    
+  }
+
+
+
+  .email-inputs {
+    display: inline-flex; 
+    align-items: center; /* vertically center the items within the container */
+  }
+  
+  .email-inputs input {
+     font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin-right: 10px; /* add right margin to create spacing between input and button */
+    border-radius: 15px;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(100, 165, 100);
+    text-align:center;
+  }
+
+  .email-inputs input::placeholder {
+    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+
+
+.subscribe-btn{
+    background-color: rgba(0,0,0,.3);
+    border-radius: 15px;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+  

@@ -1,0 +1,38 @@
+/* ShareYourStory.css */
+
+.share-your-story {
+  background-color: rgb(163, 87, 84);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sentence-wrapper {
+  background-color: green;
+  display: flex;
+  flex-direction: column; /* stack the sentences vertically */
+  align-items: center; /* center the sentences horizontally */
+ 
+}
+.paragraph-sentence{
+  padding-left: 20px;
+}
+.first-sentence {
+  font-size: 15px;
+  color: white;
+}
+
+.second-sentence {
+  font-size: 15px;
+  color: white;
+}
+
+.column{
+  font-size: 35px;
+  color: white;
+  padding-left: 80px;
+}
+
+
+

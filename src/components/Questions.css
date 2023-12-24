@@ -1,0 +1,107 @@
+  
+  .app {
+    background-color: #92bc98;
+    min-height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin: 100px;
+    width: 1000px;
+    left: 80px;
+    
+    border-radius: 20px;
+
+  }
+  
+  .end-section {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+  }
+  
+  
+  .question-section {
+    width: 100%;
+    position: relative;
+    
+  }
+  
+  .question-count {
+    margin-bottom: 20px;
+  }
+  
+  .question-count span {
+    font-size: 30px;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color:#3b3c40
+  }
+  
+  
+
+  .answer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nextBtn {
+
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #92bc98;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    font-family: 'Outfit','Segoe UI', 'Roboto', 'Oxygen';
+    font-weight: bold;
+    color: black;
+    border: 3px solid rgb(242, 249, 242);
+
+  }
+
+  .regularBtn{
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    display:inline-block;
+    background-color: #92bc98;
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    cursor: pointer;
+    padding: 5px 20px;
+    font-family: 'Outfit','Segoe UI', 'Roboto', 'Oxygen';
+    font-weight: bold;
+    color: black;
+  
+  }
+  
+  .correct {
+    background-color: #2f922f;
+  }
+  
+  .incorrect {
+    background-color: #ff3333;
+  }
+  
+  .regularBtn:hover {
+    background-color: #555e7d;
+  }
+  
+
+  .question-images{
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+  }
