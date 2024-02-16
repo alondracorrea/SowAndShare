@@ -1,6 +1,12 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
 .the-text {
-  background-color: #96b887;
+  /*background-color: #96b887;*/
   display: flex;
 }
 
@@ -14,7 +20,6 @@
   justify-content: center;
   align-items: flex-end;
   height: 300px;
-  background-color: #96b887; /* background color for the ground */
 }
 
 /* stem */
@@ -22,7 +27,7 @@
   position: relative;
   width: 10px;
   height: 120px;
-  background-color: #8b572a; 
+  background-color: #8b572a;
   border-radius: 8px;
   transition: height 2s ease-in-out;
   left: 200px;
@@ -33,7 +38,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: #4caf50; 
+  background-color: #4caf50;
   border-radius: 50%;
 }
 
@@ -57,40 +62,38 @@
   height: 200px;
 }
 
-.earth-container {
-  background-color: #96b887;
-  /*background-color: brown;*/
+.whole {
+  height: auto;
+  width: max-content;
+  display: flex;
+}
+
+#earth-container {
+  border-radius: 50%;
   height: 200px;
   width: 200px;
-  margin-right: 100px;
-  margin-bottom: 135px;
-  background-image: url('../assets/earth.png');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-image: url("../assets/earth.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#share-btn{
-height: fit-content;
- width: fit-content;
- padding: 5px 20px;
- font-family: 'Outfit','Segoe UI', 'Roboto', 'Oxygen';
- font-weight: bold;
- font-size: 16px;
- color: white;
- margin-bottom: 85px;
- position: absolute;
- right: 600px;
- color: black;
- background-color: #92bc98;
- border-radius: 15px;
- align-items: center;
- border: 3px solid rgb(242, 249, 242);
- cursor: pointer;
 
+#share-btn {
+  height: fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen";
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #92bc98;
+  border-radius: 15px;
+  border: 3px solid rgb(242, 249, 242);
+  cursor: pointer;
 }
 
 /* earth rotation on hover */
-.earth-container:hover {
+#earth-container:hover {
   animation: rotateEarth 2s linear infinite;
 }
 
@@ -101,4 +104,15 @@ height: fit-content;
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-items {
+  margin: 10px;
+  padding: 20px;
 }

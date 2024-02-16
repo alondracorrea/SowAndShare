@@ -1,69 +1,61 @@
- 
-  .full-bleed {
-    box-shadow: 0 0 0 100vmax antiquewhite;
-    clip-path: inset(0 -100vmax); 
-    position: absolute;
-    margin: 100px;
-    width: 1000px;
-    left: 80px;
-    background-color: antiquewhite;
+.accordion-container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px;
+  padding: 50px;
+  width: 80%;
+}
+
+.title {
+  font-size: 42px;
+  color: rgb(110, 110, 110);
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.accordion__faq {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__faq > div {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.accordion__faq-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion__faq-heading h3 {
+  color: rgb(110, 110, 110);
+  font-weight: 600;
+}
+
+.accordion__faq-heading .active {
+  color: rgb(110, 110, 110);
+}
+
+.links {
+  color: rgb(58, 58, 228);
+}
+
+.accordion__faq p {
+  margin: 0;
+  padding-bottom: 30px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  .accordion__faq > div {
+    width: 100%;
   }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-  
-  /* accordion styles */
-  
-  .title {
-    font-size: 42px;
-    color: rgb(110, 110, 110);
-    margin: 0px;
-    margin-bottom: 30px;
-  }
-  
-  .accordion-simple > .active {
-    display: block;
-  }
-  
-  .accordion__faq .inactive{
-    display: none;
-  }
-  
-  .accordion__faq > div{
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 0px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .accordion__title{
-    color: rgb(110, 110, 110);
-    padding-bottom: 20px;
-    font-weight: 500;
-  }
-  
-  .accordion__faq-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .accordion__faq-heading .active{
-    color: rgb(110, 110, 110);
-  }
-  
-  .accordion__faq-heading h3{
-    color: rgb(110, 110, 110);
-    font-weight: 600;
-  }
-  .links{
-    color:rgb(58, 58, 228);
-  }
-  .accordion__faq p {
-    margin: 0px;
-    padding-bottom: 30px;
-    color: var(--text-secondary);
-    line-height: 1.4;
-  }
+}

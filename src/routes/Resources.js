@@ -1,14 +1,14 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Accordion from '../components/Accordion'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Accordion from "../components/Accordion";
 
 const Resources = () => {
   return (
     <div>
-        <Navbar/>
-        <Accordion/>
+      <Navbar />
+      <Accordion />
     </div>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;
